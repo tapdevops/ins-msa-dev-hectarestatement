@@ -110,11 +110,9 @@ module.exports = (app) => {
  |--------------------------------------------------------------------------
  */
 	// register TPH
-<<<<<<< HEAD
-	// app.post('/api/v2.2/tph', Middleware.v_2_0.VerifyToken, Controllers.v_2_2.Tph.create)
-=======
 	app.post('/api/v2.2/tph', Middleware.v_2_0.VerifyToken, Controllers.v_2_2.Tph.create)
->>>>>>> d44caa04f3f78774196161ba9d67763fa2cba7f1
+	// read
+	app.get('/api/v2.2/tph', Middleware.v_2_0.VerifyToken, Controllers.v_2_2.Tph.read)
 	/*
 	 |--------------------------------------------------------------------------
 	 | API Versi 2.1
